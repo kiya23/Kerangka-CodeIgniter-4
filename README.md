@@ -1,2 +1,57 @@
-# Kerangka-CodeIgniter-4
-Apa itu CodeIgniter? CodeIgniter adalah framework web full-stack PHP yang ringan, cepat, fleksibel dan aman. Informasi lebih lanjut dapat ditemukan di situs resmi .  Repositori ini menyimpan versi kerangka kerja yang dapat didistribusikan, termasuk panduan pengguna. Ini telah dibangun dari repositori pengembangan .  Informasi lebih lanjut tentang rencana untuk versi 4 dapat ditemukan di pengumuman di forum.  Panduan pengguna yang sesuai dengan versi kerangka kerja ini dapat ditemukan di sini .  Perubahan Penting dengan index.php index.phptidak lagi berada di akar proyek! Itu telah dipindahkan ke dalam folder publik , untuk keamanan dan pemisahan komponen yang lebih baik.  Ini berarti Anda harus mengonfigurasi server web Anda untuk "menunjuk" ke folder publik proyek Anda , dan bukan ke root proyek. Praktik yang lebih baik adalah mengonfigurasi host virtual untuk menunjuk ke sana. Praktik yang buruk adalah mengarahkan server web Anda ke root proyek dan berharap untuk masuk ke public/... , karena sisa logika dan kerangka kerja Anda terbuka.  Silakan baca panduan pengguna untuk penjelasan yang lebih baik tentang cara kerja CI4!  Manajemen Repositori Kami menggunakan masalah Github, di repositori utama kami, untuk melacak BUGS dan untuk melacak paket kerja DEVELOPMENT yang disetujui . Kami menggunakan forum kami untuk memberikan DUKUNGAN dan mendiskusikan PERMINTAAN FITUR.  Repositori ini adalah repositori "distribusi", dibangun oleh skrip persiapan rilis kami. Masalah dengan itu dapat diangkat di forum kami, atau sebagai masalah di repositori utama.  Berkontribusi Kami menyambut baik kontribusi dari komunitas.  Silakan baca bagian Berkontribusi ke CodeIgniter di repositori pengembangan.  Persyaratan Server PHP versi 7.3 atau lebih tinggi diperlukan, dengan ekstensi berikut diinstal:  termasuk libcurl jika Anda berencana untuk menggunakan perpustakaan HTTP\CURLRequest Selain itu, pastikan ekstensi berikut diaktifkan di PHP Anda:  json (diaktifkan secara default - jangan matikan) mbstring mysqlnd xml (diaktifkan secara default - jangan matikan)
+# CodeIgniter 4 Framework
+
+## What is CodeIgniter?
+
+CodeIgniter is a PHP full-stack web framework that is light, fast, flexible, and secure. 
+More information can be found at the [official site](http://codeigniter.com).
+
+This repository holds the distributable version of the framework,
+including the user guide. It has been built from the 
+[development repository](https://github.com/codeigniter4/CodeIgniter4).
+
+More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+
+The user guide corresponding to this version of the framework can be found
+[here](https://codeigniter4.github.io/userguide/). 
+
+
+## Important Change with index.php
+
+`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
+for better security and separation of components.
+
+This means that you should configure your web server to "point" to your project's *public* folder, and
+not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
+framework are exposed.
+
+**Please** read the user guide for a better explanation of how CI4 works!
+The user guide updating and deployment is a bit awkward at the moment, but we are working on it!
+
+## Repository Management
+
+We use Github issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
+We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
+FEATURE REQUESTS.
+
+This repository is a "distribution" one, built by our release preparation script. 
+Problems with it can be raised on our forum, or as issues in the main repository.
+
+## Contributing
+
+We welcome contributions from the community.
+
+Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/contributing.md) section in the development repository.
+
+## Server Requirements
+
+PHP version 7.2 or higher is required, with the following extensions installed: 
+
+- [intl](http://php.net/manual/en/intl.requirements.php)
+- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+Additionally, make sure that the following extensions are enabled in your PHP:
+
+- json (enabled by default - don't turn it off)
+- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
+- xml (enabled by default - don't turn it off)
